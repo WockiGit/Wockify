@@ -20,10 +20,17 @@ a, a:link, a:visited, a:active {
     color: rgb(255, 255, 255);
 }
 
+// header {
+//     display: flex;
+//     background: no-repeat linear-gradient(174deg, rgb(54, 139, 54)0%, rgb(2, 2, 2)24%);
+//     height: 500px;
+//     width: 100%;
+// }
+
 body {
     display: flex;
     flex-direction: column;
-    background: no-repeat linear-gradient(174deg, rgb(54, 139, 54)0%, rgb(2, 2, 2)24%);
+    background: #121212;
 }
 
 main {
@@ -33,13 +40,21 @@ main {
     width: 100%;
 }
 
+h1 {
+    text-transform: uppercase;
+    color: #6a6a6a;
+    font-size: 22px;
+    transform: translateY(-75px);
+}
+
 #price {
     width: 60px;
 }
 
 .main-header {
-    height: 10vh;
+    height: 22vh;
     width: 100%;
+    background: no-repeat linear-gradient(178deg, rgb(54, 139, 54)0%, rgb(2, 2, 2) 80%);
 }
 
 .nav {
@@ -85,10 +100,10 @@ main {
             position: absolute;
             content: "";
             width: 1px;
-            height: 100%;
+            height: 35%;
             background-color: white;
             top: 50%;
-            right: 0;
+            right: -15px;
             transform: translate(100%, -50%);
             }
         }
@@ -121,10 +136,18 @@ main {
     margin: 0 auto;
 }
 
-.page-container {
+.header-container {
     display: flex;
     margin: 0 auto;
+
+    &__h2 {
+        color: white;
+        font-size: 45px;
+        transform: translateY(-50);
+    }
 }
+
+
 
 
 
