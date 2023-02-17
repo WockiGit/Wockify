@@ -1,0 +1,150 @@
+@import './_variables';
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol, ul, li {
+    list-style-type: none;
+}
+
+// a, a:link, a:visited, a:active {
+//     text-decoration: none;
+//     color: gray;
+// }
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: no-repeat linear-gradient(174deg, rgb(54, 139, 54)0%, rgb(2, 2, 2)24%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+}
+
+#price {
+    width: 60px;
+}
+
+.main-header {
+    height: 10vh;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    height: 9vh;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 400px;
+    padding-right: 400px;
+    justify-content: space-between;
+
+    &__box {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        filter: brightness(0) invert(1);
+        width: 200px;
+        height: 100%;
+        align-items: center;
+    }
+
+    &__image {
+           width: 150px;
+           height: 40px;
+        }
+
+
+    &__list {
+        display: flex;
+        position: relative;
+        gap: 30px;
+        
+        &:nth-child(1) {
+
+            &::after {
+            margin: 0 auto;
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 100%;
+            background-color: white;
+            top: 50%;
+            right: 0;
+            transform: translate(100%, -50%);
+            }
+        }
+        
+    }
+
+    &__item {
+        display: flex;
+        @include center;
+    }
+
+    &__link {
+        display: flex;
+        font-size: 20px;
+        margin: 0 auto;
+
+        &--end {
+            align-items: flex-end;
+            justify-self: flex-end;
+        }
+        
+        &:hover {
+            color: rgb(89, 198, 89);
+        }
+    }
+}
+
+.main-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.page-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+
+@media (min-width: 530px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}
