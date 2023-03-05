@@ -186,13 +186,16 @@ input {
 
     &__cards {
         display: flex;
+        position: relative;
+        overflow: hidden;
         height: 95px;
         min-width: 185px;
         max-width: 185px;
         border-radius: 5px;
         padding: 13px 10px;
-        font-size: 22px;
+        font-size: 20px;
         color: white;
+        
 
         &--violet {
             background: rgb(160, 72, 160);
@@ -221,7 +224,21 @@ input {
     
     }
 
+    &__img {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    transform: translateX(130px) rotate(25deg);
+    }
     
+    &__label {
+        position: relative;
+        padding-inline-end: 56px;
+        z-index: 1;
+    }
+
+    &__title {
+        position: relative;
+    }
 }
 
 

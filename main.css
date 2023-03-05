@@ -247,12 +247,14 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  overflow: hidden;
   height: 95px;
   min-width: 185px;
   max-width: 185px;
   border-radius: 5px;
   padding: 13px 10px;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
 }
 
@@ -278,5 +280,24 @@ input {
 
 .category__cards--blue {
   background: #5580a8;
+}
+
+.category__img {
+  position: absolute;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+  -webkit-transform: translateX(130px) rotate(25deg);
+          transform: translateX(130px) rotate(25deg);
+}
+
+.category__label {
+  position: relative;
+  -webkit-padding-end: 56px;
+          padding-inline-end: 56px;
+  z-index: 1;
+}
+
+.category__title {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
