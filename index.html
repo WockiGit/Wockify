@@ -7,6 +7,7 @@
     <!-- Ważne, żeby strona wyświetlała się odpowiednio na danym  urządzeniu-->
     <title>Pomoc techniczna - Spotify</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
     <body>
         <header class="main-header">
@@ -48,73 +49,107 @@
                 </div>
             </nav>
         </header>
-        <main class="main-container">
-            <header class="header-container">
-                <h1>OBSŁUGA KLIENTA SPOTIFY</h1>
-                <h2 class="header-container__h2">W czym możemy pomóc?</h2>
-            </header>
-            <div class="fastest-help">
-                <p class="fastest-help__text">
-                    <a href="index.html">Zaloguj się</a>, aby szybciej uzyskać wsparcie
-                </p>
+        <main>
+            <div class="page-container">
+                <header class="header-container">
+                    <h1>OBSŁUGA KLIENTA SPOTIFY</h1>
+                    <h2 class="header-container__h2">W czym możemy pomóc?</h2>
+                </header>
+                <div class="fast-help">
+                    <p class="fast-help__text">
+                        <a href="index.html">Zaloguj się</a>, aby szybciej uzyskać wsparcie
+                    </p>
+                </div>
+                <div class="input">
+                    <img src="/icons/search-icon.png" class="input__search" alt="search icon">
+                    <input type="text" placeholder="Szukaj" name="Search">
+                </div>
+                <div class="category">
+                    <a href="index.html">
+                        <div class="category__cards category__cards--violet">
+                            <div class="category__label">
+                                <p class="category__title">Płatności</p>
+                            </div>
+                            <img src="Images/1.webp" class="category__img" alt="visa card">
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="category__cards category__cards--red">
+                            <div class="category__label">
+                                <p class="category__title">Plany premium</p>
+                            </div>
+                            <img src="Images/2.webp" class="category__img" alt="pen in hand">
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="category__cards category__cards--orange">
+                            <div class="category__label">
+                                <p class="category__title">Aplikacja</p>
+                            </div>
+                            <img src="Images/3.webp" class="category__img" alt="headphones">
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="category__cards category__cards--green">
+                            <div class="category__label">
+                                <p class="category__title">Urządzenia</p>
+                            </div>
+                            <img src="Images/4.webp" class="category__img" alt="device">
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="category__cards category__cards--gray">
+                            <div class="category__label">
+                                <p class="category__title">Prywatność i bezpieczeństwo</p>
+                            </div>
+                            <img src="Images/5.webp" class="category__img" alt="key">
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="category__cards category__cards--blue">
+                            <div class="category__label">
+                                <p class="category__title">Konto</p>
+                            </div>
+                            <img src="Images/6.webp" class="category__img" alt="phone in hand">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="input">
-                <img src="/icons/search-icon.png" class="input__search" alt="search icon">
-                <input type="text" placeholder="Szukaj" name="Search">
+            <div class="support-container">
+                <div class="quick-support">
+                    <h2 class="quick-support__h2">Szybka pomoc</h2>
+                    <div class="quick-support__box">
+                        <p class="quick-support__box--p">Nie mogę zresetować hasła</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="quick-support__box">
+                        <p class="quick-support__box--p">Nie pamiętam danych do logowania</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="quick-support__box">
+                        <p class="quick-support__box--p">Pomoc z logowaniem przez Facebooka</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="quick-support__box">
+                        <p class="quick-support__box--p">Metody płatności</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="quick-support__box">
+                        <p class="quick-support__box--p">Aktywacja lub dołączanie do Premium Family</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="category">
-                <a href="index.html">
-                    <div class="category__cards category__cards--violet">
-                        <div class="category__label">
-                            <p class="category__title">Płatności</p>
-                        </div>
-                        <img src="Images/1.webp" class="category__img" alt="visa card">
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="category__cards category__cards--red">
-                        <div class="category__label">
-                            <p class="category__title">Plany premium</p>
-                        </div>
-                        <img src="Images/2.webp" class="category__img" alt="pen in hand">
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="category__cards category__cards--orange">
-                        <div class="category__label">
-                            <p class="category__title">Aplikacja</p>
-                        </div>
-                        <img src="Images/3.webp" class="category__img" alt="headphones">
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="category__cards category__cards--green">
-                        <div class="category__label">
-                            <p class="category__title">Urządzenia</p>
-                        </div>
-                        <img src="Images/4.webp" class="category__img" alt="device">
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="category__cards category__cards--gray">
-                        <div class="category__label">
-                            <p class="category__title">Prywatność i bezpieczeństwo</p>
-                        </div>
-                        <img src="Images/5.webp" class="category__img" alt="key">
-                    </div>
-                </a>
-                <a href="index.html">
-                    <div class="category__cards category__cards--blue">
-                        <div class="category__label">
-                            <p class="category__title">Konto</p>
-                        </div>
-                        <img src="Images/6.webp" class="category__img" alt="phone in hand">
-                    </div>
-                </a>
-            </div>
-
-
-
         </main>
         <footer class="footer">
 
